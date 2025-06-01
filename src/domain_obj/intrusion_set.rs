@@ -12,13 +12,11 @@ use crate::open_vocab::OpenVocab;
 
 
 // TODO: Optional Common Properties - not yet included
-// NOTE: TRA will serialize only output data. The rest of the ingress data that is needed only to be read,
-//       TRA will only Deserialize them.
 #[skip_serializing_none]
 #[derive(Serialize, Deserialize, Debug)]
 pub struct IntrusionSet {
-    #[serde(alias = "type")] // type is a rust keyword
-    _type: String,
+    #[serde(alias = "type", rename="type")] // type is a rust keyword
+    pub _type: String,
     spec_version: String,
     id: Identifier,
     #[serde(serialize_with = "serialize_ndt", deserialize_with = "deserialize_ndt")]

@@ -8,3 +8,7 @@ chrono = "0.4.38"
 serde = {version = "1.0.213", features = ["derive"]}
 serde_json = "1.0.132"
 serde_with = "3.11.0"
+
+[examples]
+name = "create_indicator"
+path = "examples/create_indicator.rs"

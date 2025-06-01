@@ -3,6 +3,8 @@ A rust crate for working with STIX2 CTI data.
 
 stix2-rs is a Rust crate designed for working with STIX 2.1 Cyber Threat Intelligence (CTI) data. It provides type structures and utilities to create, parse, and manipulate STIX objects into Rust applications.
 
+*Tested with rustc 1.85.0*
+
 ## Example
 
 Creating a basic Indicator object and serializing it in JSON.
@@ -46,3 +48,8 @@ fn main() {
 To run an example:
 
 `cargo run --example create_indicator`
+
+## License
+
+Licensed under either of [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
+
